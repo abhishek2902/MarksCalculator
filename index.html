@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marks Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <form onsubmit="fetch(event)" id="form">
+            <div class="marks">
+                <input id="maths" type="number" min="0" max="100" required placeholder="Maths" name="maths">
+                <input id="eng" type="number" min="0" max="100" required placeholder="English" name="eng">
+                <input id="hindi" type="number" min="0" max="100" required  placeholder="Hindi" name="hindi">
+                <input id="sci" type="number" min="0" max="100" required  placeholder="Science" name="sci">
+            </div> 
+            <button type="submit" id="btn" >Calculate</button>
+            <button type="reset" id="rst" >Reset</button>
+        </form>
+        <p id="para" style="visibility: hidden;";">You have got 44 marks out of 400 and your percentage is 11%</p>
+    </div>
+    <h1>Calculate Your</h1>
+    <h2>Percentage</h2>
+
+    <script src="script.js"></script>
+</body>
+</html>
